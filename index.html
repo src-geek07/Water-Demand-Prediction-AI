@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Water Demand Forecasting</title>
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,395;1,395&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"> <!--Link to CSS file-->
 </head>
 
@@ -54,6 +61,7 @@
 
             <label>Season :</label>
             <select id="season">
+                <option value="" disabled selected>Select Season</option>
                 <option value="winter">Winter (December-February)</option>
                 <option value="spring">Spring (March-May)</option>
                 <option value="summer">Summer (June-August)</option>
@@ -63,6 +71,7 @@
 
             <label>Day Type :</label>
             <select id="dayType">
+                <option value="" disabled selected>Select Day Type</option>
                 <option value="weekday">Weekday (Monday-Friday)</option>
                 <option value="weekend">Weekend (Saturday-Sunday)</option>
                 <option value="holiday">Public Holiday</option>
