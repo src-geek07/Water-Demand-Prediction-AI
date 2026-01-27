@@ -20,7 +20,7 @@ totalDemand = peopleUse × temperature × rainfall × season × festival + indus
 
 The system uses simple math to predict water demand:
 
-1. **Base Calculation**: Population × 200 liters per person
+1. **Base Calculation**: Population × 150 liters per person
 2. **Temperature Effect**: Hot weather = More water (+20% to +50%)
 3. **Rainfall Effect**: Rain = Less water (-10% to -20%)
 4. **Season Effect**: Summer = +30%, Winter = -15%
