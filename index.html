@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Water Demand Forecasting</title>
+    <link rel="stylesheet" href="style.css"> <!--Link to CSS file-->
+</head>
+
+<body>
+    <div class="container">
+        <h1>WATER DEMAND PREDICTION SYSTEM</h1>
+        <p style="text-align: center; color: #666; font-size: 18px;">
+            Enter the details below to predict water usage
+        </p>
+
+        <!-- How ai works section -->
+        <div class="ai-working">
+            <h3> 🤖 How Our Simple AI Works !!</h3>
+            <p>Our system is like a smart calculator! It looks at different things that affect water usage :</p>
+            <ul>
+                <li><b>More people = More water needed</b></li>
+                <li><b>Hot weather = People use more water</b></li>
+                <li><b>Rain = People use less water</b></li>
+                <li><b>Summer = More water than winter</b></li>
+                <li><b>Festivals = Extra water needed</b></li>
+            </ul>
+            <p>The AI gives each factor a "score" and adds them up to predict total water needed!</p>
+        </div>
+
+        <!-- Input Form -->
+        <div class="form-section">
+            <h2>Enter Information</h2>
+
+            <label>Date :</label>
+            <input type="date" id="dateInput" placeholder="Enter Date">
+            <br>
+
+            <label>City Population (in thousands) :</label>
+            <input type="number" id="population" value="" min="10" max="10000" placeholder="Enter Population">
+            <small style="color: #666;">Example: Enter 500 for 500,000 people</small>
+            <br>
+
+            <label>Temperature (°C) :</label>
+            <input type="number" id="temperature" value="" min="-10" max="50" placeholder="Enter Temperature">
+            <small style="color: #666;">How hot or cold is it?</small>
+            <br>
+
+            <label>Expected Rainfall (mm) :</label>
+            <input type="number" id="rainfall" value="" min="0" max="500" placeholder="Rainfall Expected">
+            <small style="color: #666;">How much rain is expected?</small>
+            <br>
+
+            <label>Season :</label>
+            <select id="season">
+                <option value="winter">Winter (December-February)</option>
+                <option value="spring">Spring (March-May)</option>
+                <option value="summer">Summer (June-August)</option>
+                <option value="autumn">Autumn (September-November)</option>
+            </select>
+            <br>
+
+            <label>Day Type :</label>
+            <select id="dayType">
+                <option value="weekday">Weekday (Monday-Friday)</option>
+                <option value="weekend">Weekend (Saturday-Sunday)</option>
+                <option value="holiday">Public Holiday</option>
+            </select>
+            <br>
+
+            <label class="checkbox-label">
+            <input type="checkbox" id="festival"> Any Festival or Special Event?</label>
+            <br>
+
+            <label>Factory/Industry Activity (%) :</label>
+            <input type="number" id="industrial" value="" min="0" max="100" placeholder="Amount of Industrial Activity">
+            <small style="color: #666;">0% = All closed, 100% = All running</small>
+            <br>
+
+            <button onclick="calculateWaterDemand()">Calculate Water Demand</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="result-box" id="resultBox">
+            <h2 style="text-align: center;">Prediction Results</h2>
+
+            <div class="big-number" id="resultNumber">0</div>
+            <p style="text-align: center; font-size: 20px; color: #666;">
+                Million Liters Per Day
+            </p>
+            <div style="margin: 20px 0;">
+
+            </div>
+            <h3>Breakdown of Water Usage:</h3>
+            <div class="info-box">
+                <b>People's Daily Use:</b> <span id="peopleUse">0</span> million liters
+            </div>
+            <div class="info-box">
+                <b>Industry Use:</b> <span id="industryUse">0</span> million liters
+            </div>
+            <div class="info-box">
+                <b>Weather Effect:</b> <span id="weatherEffect">Normal</span>
+            </div>
+            <div class="info-box">
+                <b>Season Effect:</b> <span id="seasonEffect">Normal</span>
+            </div>
+
+            <div id="alertBox"></div>
+
+            <h3>Prev Forecast:</h3>
+            <table id="forecastTable">
+                <tr>
+                    <th>Day</th>
+                    <th>Predicted Demand (Million Liters)</th>
+                </tr>
+            </table>
+        </div>
+        <!-- Previous Predictions -->
+        <div class="section" id="historySection" style="display: none;">
+            <h2>Previous Predictions</h2>
+            <table id="historyTable">
+                <tr>
+                    <th>Date</th>
+                    <th>Demand</th>
+                    <th>Temperature</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to our SIMPLE JavaScript file -->
+
+
+</body>
+
+</html>
