@@ -17,7 +17,8 @@ function calculateWaterDemand() {
     if (temp > 30) {
         finalDemand = finalDemand + (baseUsage * 0.2);
         document.getElementById("weatherEffect").innerText = "High (Heatwave)";
-    } else {
+    } 
+    else {
         document.getElementById("weatherEffect").innerText = "Normal";
     }
 
