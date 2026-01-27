@@ -1,6 +1,6 @@
 # Water Demand Prediction System
 
-## Live Site : https://src-geek07.github.io/Water-Demand-Prediction/
+## Live Site : 
 ## 📁 Files Included
 
 This project contains 3 files:
