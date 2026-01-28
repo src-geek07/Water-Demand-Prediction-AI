@@ -7,7 +7,7 @@ This project contains 3 files:
 
 1. **index.html** - The main HTML file with the website structure
 2. **style.css** - The CSS file with all the styling and colors
-3. **script.js** - The JavaScript file with the AI prediction logic
+3. **script.js** - The JavaScript file with the AI prediction logic 
 
 
 **How the AI works:**
