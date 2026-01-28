@@ -14,10 +14,14 @@ function calculateWaterDemand() {
     let finalDemand = baseUsage;
 
     // If it's hot (over 30°C), people use 20% more water
-    if (temp > 30) {
-        finalDemand = finalDemand + (baseUsage * 0.2);
+   if (temp > 35) {
+        finalDemand = finalDemand + (baseUsage * 1.5);
         document.getElementById("weatherEffect").innerText = "High (Heatwave)";
     } 
+    else if(temp > 25){
+         finalDemand = finalDemand + (baseUsage * 1.2);
+        document.getElementById("weatherEffect").innerText = "Moderate";
+    }
     else {
         document.getElementById("weatherEffect").innerText = "Normal";
     }
