@@ -46,7 +46,7 @@ function calculateWaterDemand() {
 
     // Festivals or Special Occassions or event add extra demand
     if (isFestival) {
-        finalDemand = finalDemand + 10;
+        finalDemand = finalDemand + 15;
     }
 
     // If factory and Industrial usage 
