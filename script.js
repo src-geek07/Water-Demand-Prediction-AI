@@ -28,7 +28,7 @@ function calculateWaterDemand() {
 
     // If raining people use 10% less water 
     if (rain > 50) {
-        finalDemand = finalDemand - (baseUsage * 0.1);
+        finalDemand = finalDemand - (baseUsage * 0.8);
     }
 
     // Summer season increases the demand for water
