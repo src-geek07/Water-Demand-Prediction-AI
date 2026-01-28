@@ -27,7 +27,7 @@ function calculateWaterDemand() {
     }
 
     // If raining people use 10% less water 
-    if (rain > 5) {
+    if (rain > 50) {
         finalDemand = finalDemand - (baseUsage * 0.1);
     }
 
