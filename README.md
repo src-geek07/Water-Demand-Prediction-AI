@@ -34,7 +34,5 @@ The system uses simple math to predict water demand:
 - ✅ Consider weather conditions
 - ✅ Account for festivals and events
 - ✅ Track industrial usage
-- ✅ See 7-day forecast
 - ✅ View prediction history
 - ✅ Get smart alerts (high demand, heat waves, etc.)
-- ✅ Confidence rating for predictions
