@@ -36,6 +36,10 @@ function calculateWaterDemand() {
         finalDemand = finalDemand + (baseUsage * 0.15);
         document.getElementById("seasonEffect").innerText = "Higher (Summer Peak)";
     }
+     else if(season == "winter"){
+        finalDemand = finalDemand - (baseUsage * 0.15);
+        document.getElementById("seasonEffect").innerText = "Normal Winter";
+    }
     else {
         document.getElementById("seasonEffect").innerText = "Normal";
     }
